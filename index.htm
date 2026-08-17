@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Ces lignes disent à Android d'afficher votre image dans le SMS -->
+    <meta property="og:title" content="Mariage Cédric & Naomie" />
+    <meta property="og:description" content="Cliquez pour voir l'invitation en plein écran 🎉" />
+    <meta property="og:image" content="NaomieEtCedric.png" />
+    <meta property="og:url" content="http://cedric.42web.io/" />
+        <style>
+        /* Supprime les marges blanches autour de la page */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Empêche les barres de défilement */
+            background-color: #000000; /* Fond noir pour les bords si l'image n'a pas le même format que l'écran */
+        }
+
+        /* Force l'image à prendre tout l'écran */
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Ajuste l'image sans la déformer ni la couper */
+        }
+    </style>
+</head>
+<body>
+    <!-- Si le client clique sur le lien, il verra l'image sur son écran -->
+    <img src="NaomieEtCedric.png" alt="Image">
+</body>
+</html>
